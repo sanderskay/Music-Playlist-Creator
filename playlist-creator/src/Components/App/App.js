@@ -1,22 +1,23 @@
 import "./App.css";
-import Playlist from './Playlist';
-import SearchBar from './SearchBar';
-import SearchResults from './SearchResults';
+import Playlist from "./Playlist";
+import SearchBar from "./SearchBar";
+import SearchResults from "./SearchResults";
 
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Ja<span className="highlight">mmm</span>ing</h1>
-      <div className="App">
-      <!-- Add a SearchBar component -->
-       <div className="App-playlist">
-      <!-- Add a SearchResults component -->
-      <!-- Add a Playlist component -->
+class App extends React.Component {
+  render() {
+    <div>
+      <h1>
+        Ja<span class="highlight">mmm</span>ing
+      </h1>
+      <div class="App">
+        <SearchBar />
+        <div class="App-playlist">
+          <SearchResults />
+          <Playlist />
+        </div>
       </div>
-       </div>
-    </div>
-  );
+    </div>;
+  }
 }
 
 export default App;
